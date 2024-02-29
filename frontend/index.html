@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="country_list"></div>
+    <div>
+      <p class="text-7xl bg-red-700">Hi</p>
+      <input type="text" id="min" placeholder="min" />
+      <input type="text" id="max" placeholder="max" />
+      <button class="btn btn-primary h-[5rem]" id="search">Search</button>
+    </div>
+    <div>
+      <input type="text" id="nameInput" placeholder="Country Name" />
+      <input type="number" id="populationInput" placeholder="Population" />
+      <button class="btn btn-secondary" id="postButton">POST</button>
+    </div>
+    <!--     <div id="country_list"  class=""></div> -->
+    <div
+      id="updateInputsDiv"
+      class="hidden absolute z-10 inset-0 bg-primary justify-center items-center"
+    >
+      <div class="p-4 bg-secondary border-2 border-info">
+        <input
+          type="text"
+          class="updateInput"
+          id="updatedNameInput"
+          placeholder="new name"
+        />
+      </div>
+      <div class="">
+        <input
+          type="number"
+          class="updateInput"
+          id="updatedPopulationInput"
+          placeholder="new population"
+        />
+      </div>
+      <button id="save-update" class="btn btn-primary">Save</button>
+      <button id="cancel-update" class="btn btn-error">Cancel</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
